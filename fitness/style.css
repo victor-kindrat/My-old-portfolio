@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wrap {
+    width: 80%;
+    border: 1px solid #141414;
+    padding: 20px;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+}
+
+header {
+    background-color: dimgray;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.nav li{
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif
+}
+
+.nav a {
+    text-decoration: none;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.2s;
+}
+
+.nav {
+    height: 100%;
+}
+
+.nav a:hover {
+    background-color: darkslategray;
+    transition: 0.3s;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.menu {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.content {
+    height: 100%;
+    width: 70%;
+}
+
+.menuBtn {
+    text-decoration: none;
+    color: #333;
+    border: #333 solid 1px;
+    padding-left: 20px;
+    height: 40px;
+    width: 80%;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.btnText:hover {
+    position:relative;
+    left: 10px;
+    transition: 0.5s;
+}
+
+.content img {
+    width: 100%;
+    border: #333 solid 1px;
+}
+
+.content p {
+    padding: 30px;
+    margin-top: 10px;
+}
+
+footer {
+    height: 50px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerNav {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.footerNav li{
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footerNav a {
+    text-decoration: none;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.2s;
+}
+
+.footerNav a:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    font-size: 18px;
+    font-weight: 900
+}
+
+
+@media screen and (max-width:1000px) {
+    main {
+        flex-direction: column;
+    }
+    
+    header ul {
+        width: 100%;
+    }
+    
+    .menu {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .content {
+        width: 100%;
+    }
+    
+    .menuBtn {
+        width: 100%;
+    }
+    
+    footer {
+        flex-direction: column;
+        height: 100px;
+    }
+    
+    .footerNav {
+        width: 100%;
+    }
+}
