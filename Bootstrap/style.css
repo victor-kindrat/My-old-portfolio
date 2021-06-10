@@ -1,0 +1,132 @@
+.exit {
+    margin-left: 10px !important;
+}
+
+.card {
+    float: left;
+    margin: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    height: 400px;
+    padding: 5px;
+    width: 100%;
+    overflow: auto;
+}
+
+.card-img-top {
+
+    position: relative;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.navbar-brand {
+    color: #e31e2b !important;
+    font-weight: 900;
+    margin-left: 40px;
+}
+
+.form {
+    width: 40%;
+    position: relative;
+    left: 30%;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.logo {
+    height: 25px;
+    width: 25px;
+    margin-bottom: -10px !important;
+}
+
+.card-text {
+    font-size: 7px !important;
+}
+
+.cards {
+    padding: 5px;
+}
+
+.tvcard {
+    width: 50% !important;
+}
+
+.redLine {
+    background-color: #e31e2b;
+    width: 100%;
+    height: 7px;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    background-origin: content-box;
+    float: right;
+}
+
+.carousel-inner {
+    height: 80vh !important;
+}
+
+.mainList {
+    float: left;
+    width: 40% !important;
+}
+
+.main {
+    margin-top: 10px;
+    border-radius: 1px !important;
+    border: 0 black solid;
+    background-color: black !important;
+    color: white;
+    transition: 0.3s;
+}
+.myHover {
+    border-radius: 0;
+    transition: 0.3s;
+}
+
+.main:hover {
+    color: white;
+    background-color: #000;
+    transition: 0.3s;
+    border-left: #e31e2b solid 5px;
+}
+
+.myHover:hover {
+    color: white;
+    background-color: #000;
+    transition: 0.3s;
+    border-left: #e31e2b solid 5px;
+    
+}
+
+.cost {
+    color: #e31e2b;
+    font-size: 30px;
+}
+
+#list-tab {
+    width: 200px !important;
+}
+
+@media (min-width: 1000px ) {
+    .mainList {
+        display: flex !important;
+        align-items: flex-start !important;
+        margin-top: 20px !important;
+    }
+    
+    .carousel {
+        margin-bottom: 0 !important;
+        height: 50% !important;
+    }
+}
+
+.offcanvas {
+    height: 45vh;
+}

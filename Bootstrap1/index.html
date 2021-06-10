@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel="icon" href="1.jpg">
+    <title>Main page</title>
+    <style>
+        .mynav {
+            margin-left: 30px;
+        }
+
+        .navmenu {
+            margin-left: 30px;
+        }
+
+        .mycar {
+            height: 80vh;
+        }
+
+        .mytext {
+            float: right;
+        }
+
+        .listOfLorem {
+            padding-right: 100px;
+            margin-right: 20px;
+        }
+
+        .loremtext {
+            margin-left: 30px;
+        }
+
+        .textnames {
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary navigation">
+        <div class="container-fluid mynav">
+            <a class="navbar-brand" href="index.html">
+                <img src="1.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                My first Bootstrap page
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navmenu" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Main page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="galery.html">Photo galery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="reg.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown btn-primary">
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                My other projects
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a target="_blank" class="dropdown-item" href="bs.html">Black Sea</a></li>
+                                <li><a target="_blank" class="dropdown-item" href="g.html">Google page</a></li>
+                                <li><a target="_blank" class="dropdown-item" href="shop.html">Shop site</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide mycar" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item mycar active">
+                <img src="3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item mycar">
+                <img src="2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lorem ipsum dolor sit.</h1>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item mycar">
+                <img src="4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div id="navbar-example">
+        <ul class="nav nav-tabs" role="tablist">
+            <div id="list-example col-5" class="list-group textnames">
+                <a class="list-group-item list-group-item-action listOfLorem" href="#list-item-1">Lorem 1</a>
+                <a class="list-group-item list-group-item-action listOfLorem" href="#list-item-2">Lorem 2</a>
+                <a class="list-group-item list-group-item-action listOfLorem" href="#list-item-3">Lorem 3</a>
+                <a class="list-group-item list-group-item-action listOfLorem" href="#list-item-4">Lorem 4</a>
+            </div>
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example loremtext col-7" tabindex="0">
+                <h2 id="list-item-1">Lorem 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga molestias iste odio ducimus eum, dignissimos placeat voluptas, vel nam tempora sequi ipsa similique repudiandae quod architecto commodi reprehenderit velit ratione incidunt tenetur repellendus minus cupiditate esse eius. Dicta blanditiis ullam doloribus quasi assumenda veniam perferendis voluptatem dignissimos quod. Repudiandae hic commodi pariatur doloremque praesentium, aspernatur minus ratione vitae, eum totam harum quo blanditiis eaque dicta dolorum libero expedita provident, sed sequi eius magni placeat amet? Consequatur eaque esse, ipsam quo dicta praesentium culpa saepe vero. Eaque iusto voluptatibus, temporibus illum reprehenderit exercitationem? Sunt nam explicabo excepturi dolorem fuga maxime illum, laborum suscipit et nobis debitis, itaque eveniet. Explicabo quos, cupiditate magni rerum ea doloribus illum aliquid repellat! Tempora modi, voluptatum nulla ipsam delectus consequuntur autem iusto itaque non qui, quasi id maiores sit nobis eaque velit ullam quod vel. Commodi velit ipsum fugit vitae temporibus, asperiores autem, possimus, numquam vel accusantium maiores at quaerat nemo quasi delectus. Dolore voluptas natus repudiandae ipsum sequi velit ea quibusdam, deserunt dignissimos libero adipisci minima reiciendis sit nulla explicabo minus culpa laudantium ducimus odio modi vitae placeat quia consequuntur necessitatibus et. Iusto, atque, voluptate. Nam in optio, est perspiciatis ipsam saepe nesciunt, rem veniam.</p>
+                <h2 id="list-item-2">Lorem 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa corporis, deserunt. Voluptatibus praesentium enim dolorum doloremque ducimus optio debitis fugiat. Possimus ipsam, dicta exercitationem sequi repudiandae facere cumque reprehenderit veniam iure at repellat eveniet, suscipit commodi quibusdam eius atque et dolore, libero ut deleniti eligendi totam! Provident laudantium, quo earum aspernatur delectus fuga libero ea quod architecto, consequatur, mollitia rerum cumque praesentium temporibus! Vel aliquid tenetur vitae atque, porro dolores aperiam dicta numquam eligendi! Asperiores aspernatur, facere voluptatem est sint neque dolores enim beatae, aut error nisi. Iste magni maiores debitis quis ad, placeat autem! Alias repellat ratione minus quam nulla sint fugit dolores laborum quos culpa voluptates natus nam cumque, provident sapiente possimus itaque praesentium ad enim iure consectetur, eligendi expedita ipsam libero. Tempore totam, facilis? Necessitatibus corporis iusto maiores reprehenderit, sint veritatis, ratione modi quasi error officiis velit sed quisquam eius ullam odio delectus officia expedita incidunt et nesciunt. Nam repellendus laboriosam rerum, ipsam, hic deserunt atque rem laborum suscipit ullam magni dolor labore ducimus est consequatur deleniti maiores modi, animi recusandae! Praesentium iure non in numquam magnam ab, voluptate rem iste facere expedita, qui, impedit repudiandae cum eos saepe. Enim laboriosam praesentium blanditiis possimus laudantium ipsum a.</p>
+                <h2 id="list-item-3">Lorem 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad officia, harum sint est aliquam veritatis ducimus sed repudiandae, natus consequuntur delectus! Omnis mollitia aspernatur voluptatum, repudiandae, assumenda sequi. Optio tempora reiciendis voluptates adipisci obcaecati quia esse earum! Maiores magni esse quae, reprehenderit fugit voluptate, vitae qui adipisci aperiam earum non tempora in doloremque corporis porro velit, nostrum voluptatem eos? Recusandae natus aliquam veniam laudantium sit! Distinctio laudantium, reprehenderit impedit. Dolore dolorum nulla tempora id maxime saepe, iusto nihil deleniti, cum, est minus aspernatur culpa? Accusantium adipisci sapiente id laborum beatae labore. Quo, ipsum, debitis? Unde corporis voluptatibus nulla sit voluptatum aperiam, accusantium eos obcaecati sunt nisi corrupti rem, ullam nihil vel mollitia dolor quod deserunt laborum asperiores sint dolore perferendis! Hic beatae rerum amet, possimus. Necessitatibus nam dolor, nemo culpa amet animi, minima ipsam odio similique velit dolorum magnam possimus facere ducimus vero sapiente perferendis sed, incidunt, odit! Recusandae, officia, sunt! Minus ducimus aperiam suscipit veniam laboriosam pariatur possimus nemo! Ipsa commodi ea quod ab est labore, itaque, veniam rerum accusamus nam pariatur hic ex fugit excepturi. In, nisi necessitatibus. Ab id aliquid dolorem architecto eos eum sint impedit, dolore nemo voluptatem nesciunt reiciendis obcaecati voluptatibus voluptates esse blanditiis, ducimus.</p>
+                <h2 id="list-item-4">Lorem 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione similique voluptates ab sapiente eos assumenda voluptas commodi deleniti ad nemo corporis repudiandae eligendi beatae veniam quis nam, aliquam accusantium impedit porro ipsum quo quidem, blanditiis! Tempore repudiandae eius, libero, eos enim sed ducimus ipsam amet consectetur cupiditate quisquam ipsa, voluptas animi iusto totam in, maiores neque. Magni voluptas reprehenderit nobis, ipsa. Cum inventore perspiciatis non architecto! Dolores cumque repellendus voluptas explicabo tenetur. Hic atque necessitatibus fuga, corrupti, tenetur alias. Laboriosam magni impedit vel sint velit voluptates, ut, accusamus quasi repellendus dolore. Maxime explicabo totam unde eum quisquam repellendus omnis sapiente repellat distinctio aliquid, necessitatibus, culpa. Magnam temporibus at illo animi suscipit quibusdam explicabo, ab repudiandae qui. Facilis quibusdam praesentium perferendis atque quod veniam dolores nihil. Laboriosam perferendis quibusdam sapiente omnis dolorum amet, placeat fugit eum, nesciunt dolores ut? Autem ipsum eos impedit dolorum, reprehenderit suscipit deserunt id assumenda nostrum corporis quaerat beatae, architecto labore ducimus? Asperiores provident aliquam cupiditate cum, doloribus, aspernatur recusandae. Veniam suscipit numquam, assumenda molestiae esse quasi vel quam cupiditate dicta deleniti repellat nostrum a molestias facilis, quas repudiandae optio. Suscipit in vero ab dolorum totam, voluptate, magnam unde minus. Nobis magni expedita sequi, molestias doloribus, aspernatur!</p>
+            </div>
+        </ul>
+    </div>
+
+</body>
+
+</html>
