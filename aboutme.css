@@ -1,0 +1,221 @@
+body {
+    background: linear-gradient(326deg, #00DBDE 0%, #FC00FF 100%);
+    background-size: 600% 600%;
+    animation: Gradient 20s ease infinite;
+}
+
+.photo {
+    height: 50vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    float: right;
+    margin: 5px;
+}
+
+.wrap {
+    height: auto;
+    background: linear-gradient(326deg, #00DBDE 0%, #FC00FF 100%);
+    background-size: 600% 600%;
+    animation: Gradient 20s ease infinite;
+}
+
+@keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+.story {
+    height: 80vh;
+}
+
+.text p {
+    font-size: 20px;
+    margin-left: 90px;
+    float: left;
+    color: #fff;
+}
+
+.story {
+    display: flex;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: auto;
+    margin: 5px;
+}
+
+.blocks img {
+    max-height: 200px;
+    border-radius: 5px;
+    border: solid #fff 2px;
+    box-shadow: 0 0 5px #141414;
+    transition: 0.2s;
+}
+
+.lin {
+    height: 20vh;
+    width: 0px;
+    border-right: #fff dashed 3px;
+}
+
+.blocks img:hover {
+    max-height: 210px;
+    transition: 0.5s;
+}
+
+.socialMedia img {
+    height: 30px;
+    width: 30px;
+}
+
+.socialMedia {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    background-color: #141414;
+    flex-direction: column;
+}
+
+.contact {
+    font-size: 15px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1000px) {
+    .nhead {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .story {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .text {
+        width: 90%;
+         !important font-size: 10px;
+        padding: 10px;
+    }
+
+    .theStory {
+        width: 100%;
+    }
+
+    .photo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .myPhoto {
+        border: 2px solid #141414;
+        min-height: 350px;
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wrap {
+        height: auto;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+
+    .block {
+        height: 30vh;
+    }
+
+    .nhead {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .wrap {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .myPhoto {
+        max-height: 300px;
+        max-width: 250px;
+
+    }
+
+
+    .myImprovementWay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 20vh;
+    }
+
+    .footer {
+        position: relative;
+        top: 20vh;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .myPhoto {
+        height: 100px;
+        width: 50px;
+    }
+
+    .blocks img {
+        max-height: 20vh;
+
+    }
+
+    .head {
+        height: 10vh;
+    }
+
+    .myImprovementWay {
+        top: 40vh;
+    }
+
+    .footer {
+        top: 40vh;
+    }
+
+    .block {
+        height: 100px;
+    }
+}

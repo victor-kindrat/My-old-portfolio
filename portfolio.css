@@ -1,0 +1,298 @@
+.mainHead {
+    z-index: 5;
+    width: 100%;
+    height: 30vh;
+}
+
+.wrap {
+    min-height: 100vh;
+    height: auto;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+.project {
+    margin: 10px;
+    height: 395px;
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.nhead {
+    color: #fff;
+    margin-top: 50px;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.line1 {
+    width: 90%;
+    border-radius: 1px;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.projecti {
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    align-self: flex-start;
+    max-height: 350px;
+    max-width: 350px;
+    border-radius: 5px;
+    border-bottom: #141414 solid 1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 0;
+}
+
+.projectName {
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Noto Sans, sans-serif;
+    color: #000;
+}
+
+.subject {
+    font-size: 15px;
+}
+
+.backb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    z-index: 2;
+    text-decoration: none;
+    border: #fff solid 1px;
+    padding: 5px 10px;
+    width: 90px;
+    height: 38px;
+    left: 90px;
+    top: 66px;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    transition: 0.2s;
+    font-family: Gill Sans, sans-serif;
+}
+
+.backb:hover {
+    color: #141414;
+    background-color: #fff;
+    transition: 0.3s;
+    border: 1px #fff solid;
+}
+
+.mybuttons {
+    font-family: Gill Sans, sans-serif;
+    width: 85%;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.myButton {
+    border: #141414 solid 1px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #141414;
+    padding: 3px 15px;
+    height: 35px;
+    width: 100px;
+    transition: 0.2s;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.myButton:hover {
+    background-color: #141414;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.github {
+    height: 50px;
+    width: 50px;
+    float: right;
+    position: relative;
+    bottom: 55px;
+    right: 5px;
+    transition: 0.2s;
+}
+
+.github:hover {
+    position: relative;
+    bottom: 61px;
+    transition: 0.4s;
+}
+
+.projHead {
+    width: 100%;
+    height: 65%;
+    margin: 0;
+    padding: 0;
+}
+
+.projectBottom {
+    margin: 5px;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 1400px) {
+    .myButton {
+        height: 35px;
+    }
+
+    .project {
+        max-height: 320px;
+        max-width: 250px;
+    }
+
+    .projecti {
+        max-height: 250px;
+        max-width: 250px;
+    }
+
+    .projectName {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 15px;
+        width: auto;
+        margin-bottom: 10px;
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .nHead {
+        font-size: 15px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        max-height: 370px;
+        max-width: 275px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .nhead {
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .projecti {
+        max-height: 350px;
+        max-width: 100%;
+    }
+
+    .wrap {
+        height: auto;
+    }
+
+    .projHead {
+        height: 65%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .projHead {
+        height: 70%;
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nhead {
+        font-size: 25px;
+    }
+
+    .projectName {
+
+        margin-top: 5px;
+    }
+
+    .project {
+        justify-content: space-around;
+    }
+
+    .backb {
+        line-height: 19px;
+        left: 30px;
+        width: 90px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .myButton {
+        padding: 0 15px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    .projects {
+        position: relative;
+        top: 100vh;
+    }
+}
+
+@media screen and (max-height: 200px) {
+    .projects {
+        position: relative;
+        top: 120vh;
+    }
+}

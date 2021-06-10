@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-weight: 100;
+    width: 100%;
+    background: linear-gradient(326deg, #00DBDE 0%, #FC00FF 100%);
+    background-size: 400% 400%;
+    animation: Gradient 20s ease infinite;
+}
+
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    max-height: 210vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(326deg, #00DBDE 0%, #FC00FF 100%);
+    background-size: 400% 400%;
+    animation: Gradient 20s ease infinite;
+}
+
+@keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box1 {
+    overflow: visible;
+    height: 100vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.myPhoto {
+    border: 2px solid #141414;
+    min-height: 400px;
+    min-width: 350px;
+    background-image: url(./photos/me.jpg);
+    background-size: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.box2 {
+    overflow: visible;
+    height: 100vh;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+#name {
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.marg {
+    position: relative;
+    padding-left: 10px;
+    padding-top: 50px;
+    padding-right: 50px;
+    height: 100vh;
+}
+
+#workPosition {
+    font-weight: 300;
+    font-size: 45px;
+    color: #fff;
+     !important position: relative;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.info {
+    padding-top: 18px;
+    font-family: 'Athiti', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+/*down part*/
+.buttons {
+    margin-top: 25px;
+    width: 100%;
+    font-family: Gill Sans, sans-serif;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 35px;
+    border-radius: 4px;
+    width: 180px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.buttons a:hover {
+    color: #141414;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.tg {
+    width: 50px;
+    position: relative;
+    bottom: 1px;
+    transition: 0.2s;
+}
+
+.fb {
+    width: 50px;
+    position: relative;
+    bottom: 1px;
+    transition: 0.2s;
+}
+
+.inst {
+    width: 50px;
+    position: relative;
+    bottom: 2px;
+    transition: 0.2s;
+}
+
+.socialMedia {
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    width: 80%;
+}
+
+.tg:hover {
+    position: relative;
+    bottom: 6px;
+    transition: 0.5s;
+}
+
+.fb:hover {
+    position: relative;
+    bottom: 6px;
+    transition: 0.5s;
+}
+
+.inst:hover {
+    position: relative;
+    bottom: 6px;
+    transition: 0.5s;
+}
+
+.socialMedia a {
+    position: relative;
+    bottom: 15px;
+    transition: 0.1s;
+}
+
+.down {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.up {
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.up h1 {
+    margin-bottom: 40px;
+}
+
+.up h2 {
+    margin-bottom: 40px;
+}
+
+.line {
+    width: 3px;
+    background-color: #fff;
+    height: 70vh;
+    border-radius: 1px;
+}
+
+.lineg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*media requests*/
+@media screen and (max-width: 1100px) {
+    .up h1 {
+        margin-bottom: 20px;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .workPosition {
+        font-size: 22.5px;
+        position: relative;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .info {
+        padding-top: 9px;
+        font-size: 10px;
+    }
+
+    .buttons {
+        margin-top: 12.5px;
+        width: 100%;
+    }
+
+    .down {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .up h2 {
+        margin-bottom: 20px;
+    }
+
+    .wrap {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .lineg {
+        display: none;
+    }
+
+    .wrap {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .wrap {
+        height: auto;
+    }
+
+    .myPhoto {
+        border: 2px solid #141414;
+        max-width: 90%;
+        background-color: black;
+        border-radius: 4px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons a {
+        margin: 10px;
+    }
+
+
+}
+
+@media screen and (max-height: 500px) {
+    .myPhoto {
+        height: 100%;
+        width: 100%;
+    }
+
+    .up {
+        margin-top: 100px;
+    }
+
+    .down {
+        margin-top: 100px;
+    }
+
+    .wrap {
+        height: auto;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .up h1 {
+        margin-bottom: 10px;
+    }
+
+    .name {
+        font-family: 'Varela Round', sans-serif;
+        color: #141414;
+        font-size: 7.5px;
+    }
+
+    .workPosition {
+        font-size: 11.25px;
+        font-family: 'Varela Round', sans-serif;
+        color: #141414;
+        position: relative;
+        margin-top: 12.5px;
+        margin-bottom: 10px;
+    }
+
+    .info {
+        padding-top: 4.5px;
+        font-family: 'Athiti', sans-serif;
+        font-size: 5px;
+    }
+
+    .buttons {
+        margin-top: 6.25px;
+        width: 100%;
+    }
+
+    .down {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 12.5px;
+    }
+
+    .up h2 {
+        margin-bottom: 10px;
+    }
+
+    .up {
+        margin-top: 150px;
+    }
+
+    .down {
+        margin-top: 100px;
+    }
+
+    .wrap {
+        height: auto;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    .up {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-height: 200px) {
+    .up {
+        margin-top: 300px;
+    }
+}
