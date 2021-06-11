@@ -246,6 +246,11 @@
         height: 70%;
     }
 
+    .nhead {
+        align-self: flex-end;
+        margin-right: 60px;
+    }
+    
     .wrap {
         display: flex;
         flex-direction: column;
