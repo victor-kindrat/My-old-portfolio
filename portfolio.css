@@ -22,7 +22,7 @@
 .project {
     margin: 10px;
     height: 395px;
-    max-width: 350px;
+    width: 350px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px #141414;
@@ -64,13 +64,39 @@
     flex-direction: row;
     justify-self: start;
     align-self: flex-start;
-    max-height: 350px;
-    max-width: 350px;
+    width: 100%;
+    height: 90%;
+    background-size: cover;
+    background-position: top;
     border-radius: 5px;
     border-bottom: #141414 solid 1px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     margin: 0;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.projecti:hover {
+    background-size: 0;
+    transition: 0.5s;
+}
+
+.describe {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #141414;
+    opacity: 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.describe:hover {
+    opacity: 1; !important
+    transition: 0.5s;
 }
 
 .projectName {
