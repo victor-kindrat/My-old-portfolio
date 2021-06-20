@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-image: url(thumb_l_2612.jpg);
+            background-size: cover;
+        }
+        
+        
+        .earth{
+            position: absolute;
+            margin-top: 300px;
+            margin-left: 300px;
+            z-index: 1;
+            width: 200px;
+            height: 200px;
+/*            background-color: green;*/
+            border-radius: 50%;
+            background-image: url(Earth.png);
+            background-size: cover;
+        }
+        
+        .moon{
+            position: absolute;
+            margin-top: 300px;
+            margin-left: 200px;
+            animation: move 4s;
+            animation-iteration-count: infinite;
+            z-index: 0;
+            width: 80px;
+            height: 80px;
+            background-color: darkblue;
+            border-radius: 50%;
+            background-image: url(Moon.png);
+            background-size: contain;
+        }
+        
+        @keyframes move{
+            0%{
+                margin-left: 200px;
+                margin-top: 400px;
+            }
+            
+            50%{
+                margin-left: 500px;
+                margin-top: 250px;
+                height: 120px;
+                width: 120px;
+            }
+            
+            100%{
+                margin-left: 220px;
+                margin-top: 400px;
+                z-index: 1;
+            }
+            
+        }
+        
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="earth"></div>
+    <div class="moon"></div>
+</body></html>
