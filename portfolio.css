@@ -86,17 +86,18 @@
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #141414;
     opacity: 0;
     text-align: center;
     font-size: 15px;
-    user-select:none;
+    user-select: none;
 }
 
 .describe:hover {
-    opacity: 1; !important
+    opacity: 1;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -209,61 +210,50 @@
     .myButton {
         height: 35px;
     }
-
     .project {
         max-height: 320px;
         max-width: 250px;
     }
-
     .projecti {
         max-height: 250px;
         max-width: 250px;
     }
-
     .projectName {
         font-weight: 400;
         font-size: 18px;
     }
-
     .btn {
         font-size: 15px;
         width: auto;
         margin-bottom: 10px;
         display: flex;
     }
-
 }
 
 @media screen and (max-width: 900px) {
     .nHead {
         font-size: 15px;
     }
-
     .projects {
         flex-direction: column;
     }
-
     .project {
         max-height: 370px;
         max-width: 275px;
         margin-left: 0;
         margin-right: 0;
     }
-
     .nhead {
         font-size: 40px;
         font-weight: 300;
     }
-
     .projecti {
         max-height: 350px;
         max-width: 100%;
     }
-
     .wrap {
         height: auto;
     }
-
     .projHead {
         height: 65%;
     }
@@ -273,35 +263,27 @@
     .projHead {
         height: 70%;
     }
-
     .nhead {
         align-self: flex-end;
         margin-right: 60px;
     }
-    
     .wrap {
         display: flex;
         flex-direction: column;
     }
-
     .projects {
         display: flex;
         justify-content: flex-start;
     }
-
     .nhead {
         font-size: 25px;
     }
-
     .projectName {
-
         margin-top: 5px;
     }
-
     .project {
         justify-content: space-around;
     }
-
     .backb {
         line-height: 19px;
         left: 30px;
@@ -309,7 +291,6 @@
         height: 30px;
         font-size: 12px;
     }
-
     .myButton {
         padding: 0 15px;
         margin-bottom: 10px;
