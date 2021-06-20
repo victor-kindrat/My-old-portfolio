@@ -40,7 +40,7 @@
     line-height: 70px;
     text-align: center;
     font-weight: 400;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Mali', cursive;
 }
 
 .line1 {
@@ -107,7 +107,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    font-family: Noto Sans, sans-serif;
+    font-family: 'Itim', cursive;
     color: #000;
 }
 
@@ -132,7 +132,13 @@
     position: absolute;
     color: #fff;
     transition: 0.2s;
-    font-family: Gill Sans, sans-serif;
+    font-family: 'Mali', cursive;
+}
+
+b {
+    font-family: 'Mali', cursive;
+    margin: 0;
+    padding: 0;
 }
 
 .backb:hover {
