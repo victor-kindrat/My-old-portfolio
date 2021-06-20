@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
 body {
-    background: linear-gradient(326deg, #00DBDE 0%, #FC00FF 100%);
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     background-size: 600% 600%;
     animation: Gradient 20s ease infinite;
 }
@@ -15,21 +16,21 @@ body {
 
 .wrap {
     height: auto;
-    background: linear-gradient(326deg, #00DBDE 0%, #FC00FF 100%);
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     background-size: 600% 600%;
     animation: Gradient 20s ease infinite;
 }
 
 @keyframes Gradient {
-0% {
-background-position: 0% 50%
-}
-50% {
-background-position: 100% 50%
-}
-100% {
-background-position: 0% 50%
-}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 .story {
@@ -37,43 +38,34 @@ background-position: 0% 50%
 }
 
 .text p {
-    font-size: 20px;
+    margin: 40px;
+    font-size: 23px;
     margin-left: 90px;
     float: left;
     color: #fff;
+    line-height: 30px;
+    font-family: 'Baloo Tammudu 2', cursive;
 }
 
 .story {
     display: flex;
+    justify-content: space-around;
+    width: 90%;
 }
 
 .blocks {
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
     align-items: center;
-    height: auto;
-    margin: 5px;
-}
-
-.blocks img {
-    max-height: 200px;
-    border-radius: 5px;
-    border: solid #fff 2px;
-    box-shadow: 0 0 5px #141414;
-    transition: 0.2s;
 }
 
 .lin {
     height: 20vh;
     width: 0px;
     border-right: #fff dashed 3px;
-}
-
-.blocks img:hover {
-    max-height: 210px;
-    transition: 0.5s;
 }
 
 .socialMedia img {
@@ -104,9 +96,78 @@ background-position: 0% 50%
     opacity: 0.9;
 }
 
+.about {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 50px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Mali', cursive;
+}
+
+.projectPhoto {
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.describ {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Baloo Tammudu 2', cursive;
+    height: 70vh;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.photoP {
+    height: 65%;
+    width: 75%;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.describ .nhead {
+    font-family: 'Delius', cursive;
+    margin-top: -40px;
+    width: 100%;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.arrow {
+    height: 40vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    margin-right: 0;
+    margin-left: 40px;
+}
+
 @media screen and (max-width: 1000px) {
     .nhead {
         font-size: 30px;
+    }
+    .text p {
+        font-size: 18px;
     }
 }
 
@@ -115,29 +176,26 @@ background-position: 0% 50%
         height: auto;
         display: flex;
         flex-direction: column;
-
     }
-
     .text {
         width: 90%;
-         !important font-size: 10px;
+        font-size: 10px;
         padding: 10px;
     }
-
     .theStory {
         width: 100%;
     }
-
     .photo {
         width: 100%;
         display: flex;
         justify-content: center;
     }
-
+    .nhead {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 750px) {
-
     .myPhoto {
         border: 2px solid #141414;
         min-height: 350px;
@@ -146,18 +204,50 @@ background-position: 0% 50%
 }
 
 @media screen and (max-width: 800px) {
+    .describ .nhead {
+        margin-right: 10px;
+    }
+    .describ {
+        width: 100%;
+        min-height: 40vh;
+    }
+    .projectPhoto {
+        width: 100%;
+        min-height: 50vh;
+    }
+    .describ .nhead {
+        font-family: 'Delius', cursive;
+        margin-top: 0;
+        width: 100%;
+        margin-right: 20px;
+        text-align: center;
+    }
     .wrap {
         height: auto;
     }
-
+    .photoP {
+        height: 70%;
+        width: 80%;
+    }
+    .block {
+        flex-direction: column;
+    }
+    .reverse {
+        flex-direction: column;
+        margin-left: 10px;
+    }
     .text p {
         font-size: 15px;
     }
-
-    .block {
-        height: 30vh;
+    .arrow {
+        height: 20vh;
     }
-
+    .block {
+        min-height: 70vh;
+    }
+    .about {
+        font-size: 18px;
+    }
     .nhead {
         font-size: 25px;
     }
@@ -167,16 +257,11 @@ background-position: 0% 50%
     .wrap {
         display: flex;
         flex-direction: column;
-
     }
-
     .myPhoto {
         max-height: 300px;
         max-width: 250px;
-
     }
-
-
     .myImprovementWay {
         display: flex;
         flex-direction: column;
@@ -185,7 +270,6 @@ background-position: 0% 50%
         position: relative;
         top: 20vh;
     }
-
     .footer {
         position: relative;
         top: 20vh;
@@ -197,24 +281,18 @@ background-position: 0% 50%
         height: 100px;
         width: 50px;
     }
-
     .blocks img {
         max-height: 20vh;
-
     }
-
     .head {
         height: 10vh;
     }
-
     .myImprovementWay {
         top: 40vh;
     }
-
     .footer {
         top: 40vh;
     }
-
     .block {
         height: 100px;
     }
