@@ -87,21 +87,27 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 30vh;
+    max-height: 400px;
     background-color: #141414;
     flex-direction: row;
 }
 
 .left3 {
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
-.left3,
 .right3 {
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .contact {
@@ -176,6 +182,10 @@ body {
     flex-direction: row-reverse;
     margin-right: 0;
     margin-left: 40px;
+}
+
+.qr {
+    height: 200px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -266,6 +276,9 @@ body {
     }
     .nhead {
         font-size: 25px;
+    }
+    .qr {
+        height: 100px;
     }
 }
 
