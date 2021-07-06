@@ -83,11 +83,24 @@ body {
 .footer {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 140px;
+    height: 30vh;
     background-color: #141414;
+    flex-direction: row;
+}
+
+.left3 {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left3,
+.right3 {
+    width: 50%;
+    height: 100%;
 }
 
 .contact {
