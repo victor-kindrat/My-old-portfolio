@@ -74,7 +74,7 @@ body {
 }
 
 .socialMedia {
-    width: 140px;
+    width: 100%;
     display: flex;
     align-items: center;
     margin: 10px;
@@ -94,7 +94,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .left3,
@@ -104,6 +104,8 @@ body {
 }
 
 .contact {
+    text-align: center;
+    width: 100%;
     font-size: 15px;
     color: #fff;
     opacity: 0.9;
