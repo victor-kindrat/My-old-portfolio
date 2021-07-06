@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
 body {
+    background-color: #00DBDE;
     background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     background-size: 600% 600%;
     animation: Gradient 20s ease infinite;

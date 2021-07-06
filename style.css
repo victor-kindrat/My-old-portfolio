@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     font-weight: 100;
     width: 100%;
+    background-color: #00DBDE;
     background: linear-gradient(326deg, #00DBDE 0%, #FC00FF 100%);
     background-size: 600% 600%;
     animation: Gradient 20s ease infinite;
@@ -63,6 +64,7 @@ body {
     border: 2px solid #141414;
     min-height: 400px;
     min-width: 500px;
+    background-color: rgb(155, 155, 155);
     background-image: url(./photos/me.jpg);
     background-size: cover;
     background-position: right;
