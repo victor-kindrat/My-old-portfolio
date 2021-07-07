@@ -186,6 +186,7 @@ body {
 
 .qr {
     height: 200px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 1000px) {
