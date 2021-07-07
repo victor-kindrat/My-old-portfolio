@@ -186,10 +186,11 @@ body {
 
 .qr {
     height: 200px;
-    max-width: 200px;
-    min-width: 100;
+    width: 195px;
     background-image: url(./photos/qr.png);
-    border-radius: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 8px;
     max-height: 90%;
 }
 
@@ -284,6 +285,7 @@ body {
     }
     .qr {
         height: 100px;
+        width: 95px;
     }
 }
 
