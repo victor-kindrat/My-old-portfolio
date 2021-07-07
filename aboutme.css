@@ -186,6 +186,8 @@ body {
 
 .qr {
     height: 200px;
+    max-width: 200px;
+    min-width: 100;
     background-image: url(./photos/qr.png);
     border-radius: 5px;
     max-height: 90%;
