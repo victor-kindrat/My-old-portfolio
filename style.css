@@ -65,7 +65,7 @@ body {
     min-height: 400px;
     min-width: 500px;
     background-color: rgb(155, 155, 155);
-    background-image: url(./photos/me.jpg);
+    background-image: url(./photos/me.jpeg);
     background-size: cover;
     background-position: right;
     border-radius: 4px;
