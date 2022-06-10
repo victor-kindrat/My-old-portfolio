@@ -67,7 +67,7 @@ body {
     background-color: rgb(155, 155, 155);
     background-image: url(./photos/me.jpeg);
     background-size: cover;
-    background-position: right;
+    background-position: center top;
     border-radius: 4px;
     box-shadow: 0 0 10px #fff;
 }
