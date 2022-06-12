@@ -1,5 +1,5 @@
 # Porfolio 1.0
-This is my first portfolio, created in Creator IT Academy. This portfolio contains information about me and my main projects and can help me get a job. 💻
+HTML/CSS projet. This is my first portfolio, created in Creator IT Academy. This portfolio contains information about me and my main projects and can help me get a job. 💻
 ---
 
 #### You can look preview here:
